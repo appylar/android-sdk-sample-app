@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KotlinActivity">
+
+    <com.appylar.android.sdk.bannerview.BannerView
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnShowBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Banner" />
+
+        <Button
+            android:id="@+id/btnHideBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hide Banner" />
+
+        <Button
+            android:id="@+id/btnShowInterstitial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Interstitial" />
+    </LinearLayout>
+
+</RelativeLayout>
