@@ -6,8 +6,8 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.appylar.android.sdk.bannerview.BannerView
 import com.appylar.android.sdk.bannerview.BannerViewListener
-import com.appylar.android.sdk.interstitials.Interstitial
-import com.appylar.android.sdk.interstitials.InterstitialListener
+import com.appylar.android.sdk.interstitial.Interstitial
+import com.appylar.android.sdk.interstitial.InterstitialListener
 
 class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialListener {
     private val TAG = "KotlinActivity"
@@ -32,7 +32,7 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
             }
         }
         btnHideBanner.setOnClickListener {
-            bannerView.showAd("");
+            bannerView.hideBanner()
         }
 
         Interstitial.setEventListener(this) //Attach Interstitial Event Listeners
