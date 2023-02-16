@@ -20,10 +20,10 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        bannerView = findViewById(R.id.bannerView);
-        btnShowBanner = findViewById(R.id.btnShowBanner);
-        btnHideBanner = findViewById(R.id.btnHideBanner);
-        btnShowInterstitial = findViewById(R.id.btnShowInterstitial);
+        bannerView = findViewById(R.id.bannerView)
+        btnShowBanner = findViewById(R.id.btnShowBanner)
+        btnHideBanner = findViewById(R.id.btnHideBanner)
+        btnShowInterstitial = findViewById(R.id.btnShowInterstitial)
 
         bannerView.setEventListener(this) //Attach Banner Event Listeners
         btnShowBanner.setOnClickListener {
