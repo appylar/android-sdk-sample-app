@@ -28,7 +28,7 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
         bannerView.setEventListener(this) //Attach Banner Event Listeners
         btnShowBanner.setOnClickListener {
             if (bannerView.canShowAd()) {
-                bannerView.showAd("");
+                bannerView.showAd()
             }
         }
         btnHideBanner.setOnClickListener {
@@ -38,20 +38,28 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
         Interstitial.setEventListener(this) //Attach Interstitial Event Listeners
         btnShowInterstitial.setOnClickListener {
             if (Interstitial.canShowAd()) {
-                Interstitial.showAd(this, "")
+                Interstitial.showAd(this)
             }
         }
     }
 
-    override fun onAdShown() {
-        Log.d(TAG, "onAdShown: called")
-    }
-
     override fun onInterstitialClosed() {
-        Log.d(TAG, "onNoAd: called")
+        Log.d(TAG, "onInterstitialClosed: called")
     }
 
-    override fun onNoAd() {
-        Log.d(TAG, "onInterstitialClosed: called")
+    override fun onInterstitialShown() {
+        Log.d(TAG, "onInterstitialShown: called")
+    }
+
+    override fun onNoInterstitial() {
+        Log.d(TAG, "onNoInterstitial: called")
+    }
+
+    override fun onBannerShown() {
+        Log.d(TAG, "onBannerShown: called")
+    }
+
+    override fun onNoBanner() {
+        Log.d(TAG, "onNoBanner: called")
     }
 }
