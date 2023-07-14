@@ -53,7 +53,6 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#7590BA"
             android:text="Show Banner"
-            app:cornerRadius="@dimen/margin_10dp"
             app:iconPadding="10dp" />
 
         <Button
@@ -61,8 +60,7 @@
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#7590BA"
-            android:text="Hide Banner"
-            app:cornerRadius="@dimen/margin_10dp" />
+            android:text="Hide Banner" />
 
         <Button
             android:id="@+id/btnShowInterstitial"
@@ -70,8 +68,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#7590BA"
             android:gravity="center"
-            android:text="Show Interstitial"
-            app:cornerRadius="@dimen/margin_10dp" />
+            android:text="Show Interstitial" />
     </LinearLayout>
 
 </RelativeLayout>
