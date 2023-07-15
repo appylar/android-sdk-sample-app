@@ -14,7 +14,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
             android:orientation="vertical">
@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_20dp"
-                android:text="Appylar Sample App"
+                android:text="@string/heading_text"
                 android:textAlignment="viewEnd"
                 android:textColor="#293642"
                 android:textSize="24sp"
@@ -48,8 +48,9 @@
                 android:id="@+id/btnShowBanner"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp"
                 android:backgroundTint="#7590BA"
-                android:text="Show Banner"
+                android:text="@string/show_banner_btn_text"
                 app:cornerRadius="@dimen/margin_10dp"
                 app:iconPadding="10dp" />
 
@@ -57,8 +58,9 @@
                 android:id="@+id/btnHideBanner"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp"
                 android:backgroundTint="#7590BA"
-                android:text="Hide Banner"
+                android:text="@string/hide_banner_btn_text"
                 app:cornerRadius="@dimen/margin_10dp" />
 
             <Button
@@ -67,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#7590BA"
                 android:gravity="center"
-                android:text="Show Interstitial"
+                android:text="@string/show_interstitial_btn_text"
                 app:cornerRadius="@dimen/margin_10dp" />
 
         </LinearLayout>

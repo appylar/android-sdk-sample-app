@@ -25,7 +25,10 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
         btnHideBanner = findViewById(R.id.btnHideBanner)
         btnShowInterstitial = findViewById(R.id.btnShowInterstitial)
 
-        bannerView.setEventListener(this) //Attach Banner Event Listeners
+        // Set event listener for the banner view
+        bannerView.setEventListener(this)
+
+        // Create banner buttons
         btnShowBanner.setOnClickListener {
             if (bannerView.canShowAd()) {
                 bannerView.showAd()
@@ -35,7 +38,10 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
             bannerView.hideBanner()
         }
 
+        // Set event listener for the interstitial
         Interstitial.setEventListener(this) //Attach Interstitial Event Listeners
+
+        // Create interstitial button
         btnShowInterstitial.setOnClickListener {
             if (Interstitial.canShowAd()) {
                 Interstitial.showAd(this)
@@ -43,23 +49,28 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
         }
     }
 
-    override fun onInterstitialClosed() {
-        Log.d(TAG, "onInterstitialClosed: called")
-    }
-
-    override fun onInterstitialShown() {
-        Log.d(TAG, "onInterstitialShown: called")
-    }
-
-    override fun onNoInterstitial() {
-        Log.d(TAG, "onNoInterstitial: called")
-    }
-
+    // Event listener triggered when a banner is shown
     override fun onBannerShown() {
-        Log.d(TAG, "onBannerShown: called")
+        Log.d(TAG, "onBannerShown")
     }
 
+    // Event listener triggered when there are no banners to show
     override fun onNoBanner() {
-        Log.d(TAG, "onNoBanner: called")
+        Log.d(TAG, "onNoBanner")
+    }
+
+    // Event listener triggered when an interstitial is shown
+    override fun onInterstitialShown() {
+        Log.d(TAG, "onInterstitialShown")
+    }
+
+    // Event listener triggered when an interstitial is closed
+    override fun onInterstitialClosed() {
+        Log.d(TAG, "onInterstitialClosed")
+    }
+
+    // Event listener triggered when there are no interstitials to show
+    override fun onNoInterstitial() {
+        Log.d(TAG, "onNoInterstitial")
     }
 }
