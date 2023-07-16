@@ -10,7 +10,7 @@ import com.appylar.android.sdk.interstitial.Interstitial
 import com.appylar.android.sdk.interstitial.InterstitialListener
 
 class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialListener {
-    private val TAG = "KotlinActivity"
+    private val TAG = "AppylarSampleApp"
     private lateinit var bannerView: BannerView
     private lateinit var btnShowBanner: Button
     private lateinit var btnHideBanner: Button
@@ -51,26 +51,26 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
 
     // Event listener triggered when a banner is shown
     override fun onBannerShown() {
-        Log.d(TAG, "onBannerShown")
+        Log.d(TAG, "onBannerShown()")
     }
 
     // Event listener triggered when there are no banners to show
     override fun onNoBanner() {
-        Log.d(TAG, "onNoBanner")
+        Log.d(TAG, "onNoBanner()")
     }
 
     // Event listener triggered when an interstitial is shown
     override fun onInterstitialShown() {
-        Log.d(TAG, "onInterstitialShown")
+        Log.d(TAG, "onInterstitialShown()")
     }
 
     // Event listener triggered when an interstitial is closed
     override fun onInterstitialClosed() {
-        Log.d(TAG, "onInterstitialClosed")
+        Log.d(TAG, "onInterstitialClosed()")
     }
 
     // Event listener triggered when there are no interstitials to show
     override fun onNoInterstitial() {
-        Log.d(TAG, "onNoInterstitial")
+        Log.d(TAG, "onNoInterstitial()")
     }
 }

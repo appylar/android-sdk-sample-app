@@ -78,6 +78,8 @@
     <com.appylar.android.sdk.bannerview.BannerView
         android:id="@+id/bannerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

@@ -8,7 +8,7 @@ import com.appylar.android.sdk.enums.Orientation
 import com.appylar.android.sdk.interfaces.Events
 
 class AppylarApplication : Application(), Events {
-    private val TAG = "AppylarApplication"
+    private val TAG = "AppylarSampleApp"
 
     override fun onCreate() {
         super.onCreate()
@@ -28,11 +28,11 @@ class AppylarApplication : Application(), Events {
 
     // Event listener triggered if an error occurs in the SDK
     override fun onError(error: String) {
-        Log.d(TAG, "onError: $error")
+        Log.d(TAG, "onError(): $error")
     }
 
     // Event listener triggered at successful initialization
     override fun onInitialized() {
-        Log.d(TAG, "onInitialized")
+        Log.d(TAG, "onInitialized()")
     }
 }

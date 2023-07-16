@@ -38,7 +38,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.8.0'
 
-    //Uncomment below one line after production release
+    //Uncomment below one line after production release, make sure version number is correct
     //implementation 'com.appylar:android.sdk:0.0.1'
 
     //remove below one line when production is uploaded and remove libs folder too
