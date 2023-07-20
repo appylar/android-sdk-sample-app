@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="top"
-                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginBottom="20dp"
                 android:contentDescription="@android:string/yes"
                 android:textDirection="firstStrongLtr"
                 app:srcCompat="@mipmap/ic_launcher_foreground" />
@@ -33,7 +33,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginBottom="20dp"
                 android:text="@string/heading_text"
                 android:textAlignment="viewEnd"
                 android:textColor="#293642"
@@ -48,20 +48,20 @@
                 android:id="@+id/btnShowBanner"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginBottom="10dp"
                 android:backgroundTint="#7590BA"
                 android:text="@string/show_banner_btn_text"
-                app:cornerRadius="@dimen/margin_10dp"
+                app:cornerRadius="10dp"
                 app:iconPadding="10dp" />
 
             <Button
                 android:id="@+id/btnHideBanner"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginBottom="10dp"
                 android:backgroundTint="#7590BA"
                 android:text="@string/hide_banner_btn_text"
-                app:cornerRadius="@dimen/margin_10dp" />
+                app:cornerRadius="10dp" />
 
             <Button
                 android:id="@+id/btnShowInterstitial"
@@ -70,7 +70,7 @@
                 android:backgroundTint="#7590BA"
                 android:gravity="center"
                 android:text="@string/show_interstitial_btn_text"
-                app:cornerRadius="@dimen/margin_10dp" />
+                app:cornerRadius="10dp" />
 
         </LinearLayout>
     </ScrollView>
