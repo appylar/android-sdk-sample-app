@@ -28,7 +28,7 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
         // Set event listener for the banner view
         bannerView.setEventListener(this)
 
-        // Create banner buttons
+        // Attach banner button click listener
         btnShowBanner.setOnClickListener {
             if (bannerView.canShowAd()) {
                 bannerView.showAd()
@@ -39,9 +39,9 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
         }
 
         // Set event listener for the interstitial
-        Interstitial.setEventListener(this) //Attach Interstitial Event Listeners
+        Interstitial.setEventListener(this) // Attach interstitial event listeners
 
-        // Create interstitial button
+        // Attach interstitial button click listener
         btnShowInterstitial.setOnClickListener {
             if (Interstitial.canShowAd()) {
                 Interstitial.showAd(this)
