@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppylarSampleApp</string>
+    <string name="heading_text">Appylar Sample App</string>
+    <string name="show_banner_btn_text">Show Banner</string>
+    <string name="hide_banner_btn_text">Hide Banner</string>
+    <string name="show_interstitial_btn_text">Show Interstitial</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textAlignment="center"
+    tools:context=".KotlinActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@android:string/yes"
+                android:textDirection="firstStrongLtr"
+                app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/heading_text"
+                android:textAlignment="viewEnd"
+                android:textColor="#293642"
+                android:textSize="24sp"
+                tools:textAlignment="center" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="61dp" />
+
+            <Button
+                android:id="@+id/btnShowBanner"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#7590BA"
+                android:text="@string/show_banner_btn_text"
+                app:cornerRadius="10dp"
+                app:iconPadding="10dp" />
+
+            <Button
+                android:id="@+id/btnHideBanner"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#7590BA"
+                android:text="@string/hide_banner_btn_text"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btnShowInterstitial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7590BA"
+                android:gravity="center"
+                android:text="@string/show_interstitial_btn_text"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.appylar.android.sdk.bannerview.BannerView
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
