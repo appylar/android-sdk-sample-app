@@ -33,17 +33,8 @@ android {
 }
 
 dependencies {
-
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.8.0'
-
-    //Uncomment below one line after production release, make sure version number is correct
-    //implementation 'com.appylar:android.sdk:0.0.1'
-
-    //remove below one line when production is uploaded and remove libs folder too
-    implementation fileTree(include: ['*.jar', '*.aar'], exclude: 'test_aar*', dir: 'libs')
-
-    //remove below one line when production is uploaded
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.0' //client calls
+    implementation 'com.appylar:android-sdk:2.4.3'
 }
