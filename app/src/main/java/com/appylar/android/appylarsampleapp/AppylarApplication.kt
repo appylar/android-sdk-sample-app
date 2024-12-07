@@ -19,7 +19,7 @@ class AppylarApplication : Application(), Events {
         // Initialize
         Appylar.init(
             this, // The application context
-            "<appKey>", // The unique app key for your app
+            "<YOUR_ANDROID_APP_KEY>", // The unique app key for your app
             arrayOf(AdType.BANNER, AdType.INTERSTITIAL), // The ad types that you want to show
             true // Test mode, true for development, false for production
         )
