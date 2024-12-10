@@ -4,7 +4,6 @@ import android.app.Application
 import android.util.Log
 import com.appylar.android.sdk.Appylar
 import com.appylar.android.sdk.enums.AdType
-import com.appylar.android.sdk.enums.Orientation
 import com.appylar.android.sdk.interfaces.Events
 
 class AppylarApplication : Application(), Events {
