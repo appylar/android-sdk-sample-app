@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppylarSampleApp</string>
+    <string name="app_name">Appylar Android Sample App</string>
     <string name="heading_text">Appylar Android\nSample App</string>
     <string name="show_banner_btn_text">Show Banner</string>
     <string name="hide_banner_btn_text">Hide Banner</string>
