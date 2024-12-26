@@ -22,9 +22,6 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
         fun updateStatusText(text: String){
             statusView.text = text
         }
-        fun clearStatusText(){
-            statusView.text = ""
-        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,30 +61,30 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
     // Event listener triggered when a banner is shown for the parameter height
     override fun onBannerShown(height: Int) {
         Log.d(tag, "onBannerShown($height)")
-        clearStatusText()
+        updateStatusText("")
     }
 
     // Event listener triggered when there are no banners to show
     override fun onNoBanner() {
         Log.d(tag, "onNoBanner()")
-        clearStatusText()
+        updateStatusText("No more banners in the buffer")
     }
 
     // Event listener triggered when an interstitial is shown
     override fun onInterstitialShown() {
         Log.d(tag, "onInterstitialShown()")
-        clearStatusText()
+        updateStatusText("")
     }
 
     // Event listener triggered when an interstitial is closed
     override fun onInterstitialClosed() {
         Log.d(tag, "onInterstitialClosed()")
-        clearStatusText()
+        updateStatusText("")
     }
 
     // Event listener triggered when there are no interstitials to show
     override fun onNoInterstitial() {
         Log.d(tag, "onNoInterstitial()")
-        clearStatusText()
+        updateStatusText("No more interstitials in the buffer")
     }
 }
