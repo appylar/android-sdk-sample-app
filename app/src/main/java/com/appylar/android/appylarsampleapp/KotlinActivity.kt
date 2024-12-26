@@ -39,9 +39,9 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
 
         // Attach banner button click listener
         btnShowBanner.setOnClickListener {
-            if (bannerView.canShowAd()) {
+            //if (bannerView.canShowAd()) {
                 bannerView.showAd()
-            }
+            //}
         }
         btnHideBanner.setOnClickListener {
             bannerView.hideAd()
@@ -52,9 +52,9 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
 
         // Attach interstitial button click listener
         btnShowInterstitial.setOnClickListener {
-            if (Interstitial.canShowAd()) {
+            //if (Interstitial.canShowAd()) {
                 Interstitial.showAd(this)
-            }
+            //}
         }
     }
 
@@ -67,7 +67,7 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
     // Event listener triggered when there are no banners to show
     override fun onNoBanner() {
         Log.d(tag, "onNoBanner()")
-        updateStatusText("No more banners in the buffer")
+        updateStatusText("No more banners in the buffer,\nplease retry again after a minute.")
     }
 
     // Event listener triggered when an interstitial is shown
@@ -85,6 +85,6 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
     // Event listener triggered when there are no interstitials to show
     override fun onNoInterstitial() {
         Log.d(tag, "onNoInterstitial()")
-        updateStatusText("No more interstitials in the buffer")
+        updateStatusText("No more interstitials in the buffer,\nplease retry again after a minute.")
     }
 }
