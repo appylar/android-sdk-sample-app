@@ -59,11 +59,23 @@
                 android:id="@+id/btnShowInterstitial"
                 android:layout_width="200dp"
                 android:layout_height="34dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/rounded_button"
                 android:backgroundTint="#7590BA"
                 android:gravity="center"
                 android:text="@string/show_interstitial_btn_text"
                 android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/statusView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/status_text"
+                android:textAlignment="center"
+                android:textColor="#293642"
+                android:textSize="14sp"
+                tools:textAlignment="center" />
 
         </LinearLayout>
     </ScrollView>

@@ -4,8 +4,8 @@ import android.app.Application
 import android.util.Log
 import com.appylar.android.sdk.Appylar
 import com.appylar.android.sdk.enums.AdType
-import com.appylar.android.sdk.enums.Orientation
 import com.appylar.android.sdk.interfaces.Events
+import com.appylar.android.appylarsampleapp.KotlinActivity
 
 class AppylarApplication : Application(), Events {
     private val tag = "AppylarSampleApp"
@@ -28,10 +28,12 @@ class AppylarApplication : Application(), Events {
     // Event listener triggered if an error occurs in the SDK
     override fun onError(error: String) {
         Log.d(tag, "onError(): $error")
+        KotlinActivity.updateStatusText("Error: $error")
     }
 
     // Event listener triggered at successful initialization
     override fun onInitialized() {
         Log.d(tag, "onInitialized()")
+        KotlinActivity.updateStatusText("SDK initialized.")
     }
 }
