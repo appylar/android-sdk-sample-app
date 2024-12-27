@@ -34,6 +34,6 @@ class AppylarApplication : Application(), Events {
     // Event listener triggered at successful initialization
     override fun onInitialized() {
         Log.d(tag, "onInitialized()")
-        KotlinActivity.updateStatusText("SDK initialized.")
+        KotlinActivity.updateStatusText("The SDK is initialized.")
     }
 }
