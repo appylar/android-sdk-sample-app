@@ -39,9 +39,9 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
 
         // Attach banner button click listener
         btnShowBanner.setOnClickListener {
-            //if (bannerView.canShowAd()) {
+            if (bannerView.canShowAd()) {
                 bannerView.showAd()
-            //}
+            }
         }
         btnHideBanner.setOnClickListener {
             bannerView.hideAd()
@@ -52,9 +52,9 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
 
         // Attach interstitial button click listener
         btnShowInterstitial.setOnClickListener {
-            //if (Interstitial.canShowAd()) {
+            if (Interstitial.canShowAd()) {
                 Interstitial.showAd(this)
-            //}
+            }
         }
     }
 
