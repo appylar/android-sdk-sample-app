@@ -67,7 +67,7 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
     // Event listener triggered when there are no banners to show
     override fun onNoBanner() {
         Log.d(tag, "onNoBanner()")
-        updateStatusText("No more banners in the buffer,\nplease retry again after a minute.")
+        updateStatusText("No banners in the buffer.")
     }
 
     // Event listener triggered when an interstitial is shown
@@ -85,6 +85,6 @@ class KotlinActivity : AppCompatActivity(), BannerViewListener, InterstitialList
     // Event listener triggered when there are no interstitials to show
     override fun onNoInterstitial() {
         Log.d(tag, "onNoInterstitial()")
-        updateStatusText("No more interstitials in the buffer,\nplease retry again after a minute.")
+        updateStatusText("No interstitials in the buffer.")
     }
 }
